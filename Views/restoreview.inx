@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+    <_name>Restore View</_name>
+    <id>restore.view</id>
+    <dependency type="executable" location="extensions">restoreview.py</dependency>
+    <dependency type="executable" location="extensions">inkex.py</dependency>m>
+    <param name="project" type="string" _gui-text="Project">Default</param>
+<param name="name" type="string" _gui-text="Name">Default</param>
+
+  <effect>
+        <object-type>all</object-type>
+                <effects-menu>
+                    <submenu _name="Views"/>
+                </effects-menu>
+    </effect>
+    <script>
+        <command reldir="extensions" interpreter="python">restoreview.py</command>
+    </script>
+</inkscape-extension>
